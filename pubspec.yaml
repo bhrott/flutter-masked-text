@@ -1,7 +1,7 @@
 name: flutter_masked_text
 description: Masked text input for flutter.
 version: 0.2.1
-author: Ben-hur Santos Ott
+author: Ben-hur Santos Ott <ben-hur@outlook.com>
 homepage: https://github.com/benhurott/flutter-masked-text
 
 dependencies:
@@ -11,6 +11,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+environment:
+  sdk: '>=1.23.0 <=2.0.0'
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec

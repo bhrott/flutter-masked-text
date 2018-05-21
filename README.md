@@ -2,7 +2,7 @@
 
 Masked text input for flutter.
 
-![logo](docs/flutter_logo.png)
+![logo](doc/flutter_logo.png)
 
 ## Install
 
@@ -52,7 +52,7 @@ return new MaterialApp(
 
 This is the result:
 
-![sample](docs/mask.mov.gif)
+![sample](doc/mask.mov.gif)
 
 ## Mask Options
 
@@ -80,3 +80,8 @@ print(controller.text); //123-456
 ## Using default TextEditingController
 The MaskedTextController extends TextEditingController. You can use all default native methods from this class.
 
+## TODO
+- [ ] Raw Text Widget
+- [ ] Money Mask
+- [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card
+- [ ] Custom translations
