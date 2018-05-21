@@ -12,7 +12,7 @@ On your dependencies, add:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_masked_text: ^0.1.0 #here
+  flutter_masked_text: ^0.2.1 #here
 ```
 
 In terminal, run:
