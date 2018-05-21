@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class MaskedTextController extends TextEditingController {
 
-  MaskedTextController({ String text, this.mask, Map<String, RegExp> translator = null }): super(text: text) {
+  MaskedTextController({ String text, this.mask, Map<String, RegExp> translator }): super(text: text) {
     this.translator = translator ?? MaskedTextController.getDefaultTranslator();
 
     this.addListener((){
@@ -26,6 +26,7 @@ class MaskedTextController extends TextEditingController {
   void set text(String newText) {
     if (super.text != newText) {
       super.text = newText;
+      this.selection = new TextSelection.fromPosition(new TextPosition(offset: (newText ?? '').length));
     }
   }
 
