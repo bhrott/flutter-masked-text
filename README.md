@@ -6,19 +6,7 @@ Masked text input for flutter.
 
 ## Install
 
-On your dependencies, add:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_masked_text: ^0.3.0 #here
-```
-
-In terminal, run:
-```
-flutter packages get
-```
+Follow this [GUIDE](https://pub.dartlang.org/packages/flutter_masked_text#-installing-tab-)
 
 ## Usage
 Import the library
@@ -101,8 +89,27 @@ print(controller.text); //1234 **** **** 5678
 ## Using default TextEditingController
 The MaskedTextController extends TextEditingController. You can use all default native methods from this class.
 
+## Money Mask
+To use money mask, create a MoneyMaskedTextController:
+```dart
+var controller = new MoneyMaskedTextController();
+
+//....
+new TextField(controller: controller, keyboardType: TextInputType.number)
+```
+
+It's possible to customize `decimal` and `thousand` separators:
+```dart
+var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
+```
+
+To set value programaticaly, use `updateValue`:
+```dart
+controller.updateValue(1234.0);
+```
+
 ## TODO
 - [x] Custom translations
+- [x] Money Mask
 - [ ] Raw Text Widget
-- [ ] Money Mask
 - [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card

@@ -1,6 +1,7 @@
 library flutter_masked_text;
 
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class MaskedTextController extends TextEditingController {
 
@@ -85,5 +86,71 @@ class MaskedTextController extends TextEditingController {
     }
 
     return result;
+  }
+}
+
+class MoneyMaskedTextController extends TextEditingController {
+
+  MoneyMaskedTextController({ double initialValue = 0.0, this.decimalSeparator = ',', this.thousandSeparator = '.' }) {
+    this.addListener((){
+      this.updateValue(this.numberValue);
+    });
+
+		this.updateValue(initialValue);
+  }
+
+  final String decimalSeparator;
+  final String thousandSeparator;
+
+  final int _maxLength = 19;
+
+  void updateValue(double value) {
+  	String masked = this._applyMask(value);
+
+  	if (masked != this.text) {
+  		this.text = masked;
+		}
+  }
+
+  double get numberValue =>
+  	double.parse(
+			this.text.replaceAll(this.thousandSeparator, '').replaceAll(this.decimalSeparator, '')
+		) / 100.0;
+
+	@override
+  set text(String newText) {
+    if (newText.length <= this._maxLength) {
+      super.text = newText;
+    }
+    else {
+      super.text = newText.substring(0, this._maxLength);
+    }
+
+    this.selection = new TextSelection.fromPosition(new TextPosition(offset: super.text.length));
+  }
+
+  String _applyMask(double value) {
+    String textRepresentation = value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
+
+    List<String> numberParts = [];
+
+    for(var i = 0; i < textRepresentation.length; i++) {
+      numberParts.add(textRepresentation[i]);
+    }
+
+    const lengthsWithThousandSeparators = [6, 10, 14, 18];
+
+    for (var i = 0; i < lengthsWithThousandSeparators.length; i++) {
+      var l = lengthsWithThousandSeparators[i];
+
+      if (numberParts.length > l) {
+        numberParts.insert(numberParts.length - l, this.thousandSeparator);
+      }
+      else {
+        break;
+      }
+    }
+
+    return numberParts.join('');
   }
 }
