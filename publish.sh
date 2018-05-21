@@ -1,1 +1,1 @@
-flutter packages pub publish --dry-run
+flutter test && flutter packages pub publish

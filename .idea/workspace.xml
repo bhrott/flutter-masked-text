@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a60a7eb-71eb-4c43-9ad0-36cd17a7dbf2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/flutter_masked_text.dart" afterPath="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" afterPath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -21,19 +24,21 @@
       <file leaf-file-name="flutter_masked_text.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="56" />
+            <state relative-caret-position="133">
+              <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="277">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -84,8 +89,8 @@
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
         <option value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
       </list>
     </option>
@@ -176,13 +181,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flutter Test.update text to 123456 and mask 000-000 results on 123-456">
+  <component name="RunManager" selected="Flutter Test.tests in flutter_masked_text_test.dart">
     <configuration default="false" name="tests in flutter_masked_text_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
       <method />
     </configuration>
     <configuration default="false" name="update text to 123456 and mask 000-000 results on 123-456" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="update text to 123456 and mask 000-000 results on 123-456" />
+      <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+      <method />
+    </configuration>
+    <configuration default="false" name="* must accept all characters" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="* must accept all characters" />
+      <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+      <method />
+    </configuration>
+    <configuration default="false" name="@ must accept only letters and numbers" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="@ must accept only letters and numbers" />
+      <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+      <method />
+    </configuration>
+    <configuration default="false" name="remove * translator must keep * in the mask" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="remove * translator must keep * in the mask" />
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
       <method />
     </configuration>
@@ -253,7 +273,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526892313845" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526895595342" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -301,7 +321,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526892313845" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526895595342" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -451,14 +471,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
       <item index="1" class="java.lang.String" itemvalue="Flutter Test.update text to 123456 and mask 000-000 results on 123-456" />
+      <item index="2" class="java.lang.String" itemvalue="Flutter Test.* must accept all characters" />
+      <item index="3" class="java.lang.String" itemvalue="Flutter Test.@ must accept only letters and numbers" />
+      <item index="4" class="java.lang.String" itemvalue="Flutter Test.remove * translator must keep * in the mask" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Flutter Test.update text to 123456 and mask 000-000 results on 123-456" />
-        <item index="1" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
+        <item index="1" class="java.lang.String" itemvalue="Flutter Test.remove * translator must keep * in the mask" />
+        <item index="2" class="java.lang.String" itemvalue="Flutter Test.@ must accept only letters and numbers" />
+        <item index="3" class="java.lang.String" itemvalue="Flutter Test.* must accept all characters" />
+        <item index="4" class="java.lang.String" itemvalue="Flutter Test.update text to 123456 and mask 000-000 results on 123-456" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
@@ -497,6 +523,15 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="@_must_accept_only_letters_and_numbers - 2018.05.21 at 06h 26m 46s.xml">
+      <configuration name="@ must accept only letters and numbers" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="__must_accept_all_characters - 2018.05.21 at 06h 26m 01s.xml">
+      <configuration name="* must accept all characters" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="remove___translator_must_keep___in_the_mask - 2018.05.21 at 06h 29m 53s.xml">
+      <configuration name="remove * translator must keep * in the mask" configurationId="FlutterTestConfigType" />
+    </history-entry>
     <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.05.21 at 04h 56m 36s.xml">
       <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
@@ -504,6 +539,12 @@
       <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.05.21 at 05h 24m 12s.xml">
+      <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.05.21 at 06h 24m 35s.xml">
+      <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.05.21 at 06h 30m 12s.xml">
       <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="update_text_to_123456_and_mask_000-000_results_on_123-456 - 2018.05.21 at 05h 24m 50s.xml">
@@ -590,27 +631,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="4" column="56" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="56" />
+        <state relative-caret-position="133">
+          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="277">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

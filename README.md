@@ -12,7 +12,7 @@ On your dependencies, add:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_masked_text: ^0.2.1 #here
+  flutter_masked_text: ^0.3.0 #here
 ```
 
 In terminal, run:
@@ -77,11 +77,32 @@ controller.updateText('123456');
 print(controller.text); //123-456
 ```
 
+## Using custom translators
+If you want to use your custom regex to allow values, you can pass a custom translation dictionary:
+```dart
+const translator = {
+    '#': new RegExp(r'my regex here')
+};
+
+var controller = new MaskedTextController(mask: '####', translator: translator);
+```
+
+If you want to use default translator but override some of then, just get base from `getDefaultTranslator` and override what you want (here is a sample for obfuscated credit card):
+```dart
+var translator = MaskedTextController.getDefaultTranslator(); // get new instance of default translator.
+translator.remove('*'); // removing wildcard translator.
+
+var controller = new MaskedTextController(mask: '0000 **** **** 0000', translator: translator);
+controller.updateText('12345678');
+
+print(controller.text); //1234 **** **** 5678
+```
+
 ## Using default TextEditingController
 The MaskedTextController extends TextEditingController. You can use all default native methods from this class.
 
 ## TODO
+- [x] Custom translations
 - [ ] Raw Text Widget
 - [ ] Money Mask
 - [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card
-- [ ] Custom translations

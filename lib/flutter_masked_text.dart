@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 
 class MaskedTextController extends TextEditingController {
 
-  MaskedTextController({ String text, this.mask }): super(text: text) {
+  MaskedTextController({ String text, this.mask, Map<String, RegExp> translator = null }): super(text: text) {
+    this.translator = translator ?? MaskedTextController.getDefaultTranslator();
+
     this.addListener((){
       this.updateText(this.text);
     });
@@ -13,6 +15,8 @@ class MaskedTextController extends TextEditingController {
   }
 
   final String mask;
+
+  Map<String, RegExp> translator;
 
   void updateText(String text) {
     this.text = this._applyMask(this.mask, text);
@@ -23,6 +27,15 @@ class MaskedTextController extends TextEditingController {
     if (super.text != newText) {
       super.text = newText;
     }
+  }
+
+  static Map<String, RegExp> getDefaultTranslator() {
+    return {
+      'A': new RegExp(r'[A-Za-z]'),
+      '0': new RegExp(r'[0-9]'),
+      '@': new RegExp(r'[A-Za-z0-9]'),
+      '*': new RegExp(r'.*')
+    };
   }
 
   String _applyMask(String mask, String value) {
@@ -45,46 +58,29 @@ class MaskedTextController extends TextEditingController {
       var maskChar = mask[maskCharIndex];
       var valueChar = value[valueCharIndex];
 
+      // value equals mask, just set
       if(maskChar == valueChar) {
         result += maskChar;
         valueCharIndex += 1;
         maskCharIndex += 1;
-      }
-      else if (maskChar == '0') {
-        if (new RegExp(r'[0-9]').hasMatch(valueChar)) {
-          result += valueChar;
-          maskCharIndex += 1;
-        }
-
-        valueCharIndex += 1;
-      }
-      else if (maskChar == 'A') {
-        if (new RegExp(r'[A-Za-z]').hasMatch(valueChar)) {
-          result += valueChar;
-          maskCharIndex += 1;
-        }
-
-        valueCharIndex += 1;
-      }
-      else if (maskChar == '@') {
-        if (new RegExp(r'[A-Za-z0-9]').hasMatch(valueChar)) {
-          result += valueChar;
-          maskCharIndex += 1;
-        }
-
-        valueCharIndex += 1;
-      }
-      else if (maskChar == '*') {
-        result += valueChar;
-        maskCharIndex += 1;
-        valueCharIndex += 1;
-      }
-      else {
-        // not masked value, fixed char on mask
-        result += maskChar;
-        maskCharIndex += 1;
         continue;
       }
+
+      // apply translator if match
+      if (this.translator.containsKey(maskChar)) {
+        if (this.translator[maskChar].hasMatch(valueChar)) {
+          result += valueChar;
+          maskCharIndex += 1;
+        }
+
+        valueCharIndex += 1;
+        continue;
+      }
+
+      // not masked value, fixed char on mask
+      result += maskChar;
+      maskCharIndex += 1;
+      continue;
     }
 
     return result;

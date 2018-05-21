@@ -20,4 +20,36 @@ void main() {
 
     expect(controller.text, '123-456');
   });
+
+  test('* must accept all characters', (){
+    var controller = new MaskedTextController(text: 'a0&#', mask: '****');
+
+    expect(controller.text, 'a0&#');
+  });
+
+  test('@ must accept only letters and numbers', (){
+    var controller = new MaskedTextController(text: 'a0&#', mask: '@@@');
+
+    expect(controller.text, 'a0');
+  });
+
+  test('remove * translator must keep * in the mask', (){
+    var translator = MaskedTextController.getDefaultTranslator();
+    translator.remove('*');
+
+    var controller = new MaskedTextController(mask: '0000 **** **** 0000', translator: translator);
+    controller.updateText('12345678');
+
+    expect(controller.text, '1234 **** **** 5678');
+  });
+
+  test('remove * translator must keep * in the mask', (){
+    var translator = MaskedTextController.getDefaultTranslator();
+    translator.remove('*');
+
+    var controller = new MaskedTextController(mask: '0000 **** **** 0000', translator: translator);
+    controller.updateText('12345678');
+
+    expect(controller.text, '1234 **** **** 5678');
+  });
 }
