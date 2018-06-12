@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class MaskedTextController extends TextEditingController {
-
-  MaskedTextController({ String text, this.mask, Map<String, RegExp> translator }): super(text: text) {
+  MaskedTextController({String text, this.mask, Map<String, RegExp> translator})
+      : super(text: text) {
     this.translator = translator ?? MaskedTextController.getDefaultTranslator();
 
-    this.addListener((){
+    this.addListener(() {
       this.updateText(this.text);
     });
 
@@ -27,7 +27,8 @@ class MaskedTextController extends TextEditingController {
   void set text(String newText) {
     if (super.text != newText) {
       super.text = newText;
-      this.selection = new TextSelection.fromPosition(new TextPosition(offset: (newText ?? '').length));
+      this.selection = new TextSelection.fromPosition(
+          new TextPosition(offset: (newText ?? '').length));
     }
   }
 
@@ -46,7 +47,7 @@ class MaskedTextController extends TextEditingController {
     var maskCharIndex = 0;
     var valueCharIndex = 0;
 
-    while(true) {
+    while (true) {
       // if mask is ended, break.
       if (maskCharIndex == mask.length) {
         break;
@@ -61,7 +62,7 @@ class MaskedTextController extends TextEditingController {
       var valueChar = value[valueCharIndex];
 
       // value equals mask, just set
-      if(maskChar == valueChar) {
+      if (maskChar == valueChar) {
         result += maskChar;
         valueCharIndex += 1;
         maskCharIndex += 1;
@@ -90,56 +91,77 @@ class MaskedTextController extends TextEditingController {
 }
 
 class MoneyMaskedTextController extends TextEditingController {
+  MoneyMaskedTextController(
+      {double initialValue = 0.0,
+      this.decimalSeparator = ',',
+      this.thousandSeparator = '.',
+      this.rightSymbol = ''}) {
+    _validateConfig();
 
-  MoneyMaskedTextController({ double initialValue = 0.0, this.decimalSeparator = ',', this.thousandSeparator = '.' }) {
-    this.addListener((){
+    this.addListener(() {
       this.updateValue(this.numberValue);
     });
 
-		this.updateValue(initialValue);
+    this.updateValue(initialValue);
   }
 
   final String decimalSeparator;
   final String thousandSeparator;
+  final String rightSymbol;
 
+  /**
+   * this is the maximun double capacity.
+   */
   final int _maxLength = 19;
 
   void updateValue(double value) {
-  	String masked = this._applyMask(value);
+    String masked = this._applyMask(value);
 
-  	if (masked != this.text) {
-  		this.text = masked;
-		}
+    if (masked != this.text) {
+      this.text = masked;
+    }
   }
 
-  double get numberValue =>
-  	double.parse(
-			_getSanitizedText(this.text)
-		) / 100.0;
+  double get numberValue => double.parse(_getSanitizedText(this.text)) / 100.0;
 
-	@override
+  @override
   set text(String newText) {
     if (newText.length <= this._maxLength) {
       super.text = newText;
-    }
-    else {
+    } else {
       super.text = newText.substring(0, this._maxLength);
     }
 
-    this.selection = new TextSelection.fromPosition(new TextPosition(offset: super.text.length));
+    var cursorPosition = super.text.length - this.rightSymbol.length;
+
+    this.selection = new TextSelection.fromPosition(
+        new TextPosition(offset: cursorPosition));
+  }
+
+  _validateConfig() {
+    bool rightSymbolHasNumbers = _getOnlyNumbers(this.rightSymbol).length > 0;
+
+    if (rightSymbolHasNumbers) {
+      throw new ArgumentError("rightSymbol must not have numbers.");
+    }
   }
 
   String _getSanitizedText(String text) {
-	  String cleanedText = text;
+    String cleanedText = text;
 
-	  var valuesToSanitize = [
-	    this.thousandSeparator,
-      this.decimalSeparator
-    ];
+    var valuesToSanitize = [this.thousandSeparator, this.decimalSeparator];
 
-	  valuesToSanitize.forEach((val){
-	    cleanedText = cleanedText.replaceAll(val, '');
+    valuesToSanitize.forEach((val) {
+      cleanedText = cleanedText.replaceAll(val, '');
     });
+
+    cleanedText = _getOnlyNumbers(cleanedText);
+
+    return cleanedText;
+  }
+
+  String _getOnlyNumbers(String text) {
+    String cleanedText = text;
 
     var onlyNumbersRegex = new RegExp(r'[^\d]');
 
@@ -149,11 +171,12 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   String _applyMask(double value) {
-    String textRepresentation = value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
+    String textRepresentation =
+        value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
 
     List<String> numberParts = [];
 
-    for(var i = 0; i < textRepresentation.length; i++) {
+    for (var i = 0; i < textRepresentation.length; i++) {
       numberParts.add(textRepresentation[i]);
     }
 
@@ -164,12 +187,17 @@ class MoneyMaskedTextController extends TextEditingController {
 
       if (numberParts.length > l) {
         numberParts.insert(numberParts.length - l, this.thousandSeparator);
-      }
-      else {
+      } else {
         break;
       }
     }
 
-    return numberParts.join('');
+    String numberText = numberParts.join('');
+
+    if (this.rightSymbol.length > 0) {
+      numberText += "${this.rightSymbol}";
+    }
+
+    return numberText;
   }
 }
