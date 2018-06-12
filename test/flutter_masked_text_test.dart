@@ -98,5 +98,9 @@ void main() {
 
       expect(controller.numberValue, 0.1);
     });
+
+    test('must_fail', () {
+      expect(1, 2);
+    });
   });
 }
