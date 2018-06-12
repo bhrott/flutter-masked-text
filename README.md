@@ -2,6 +2,8 @@
 
 Masked text input for flutter.
 
+![travis-ci](https://travis-ci.org/benhurott/flutter-masked-text.svg?branch=master)
+
 ![logo](doc/flutter_logo.png)
 
 ## Install

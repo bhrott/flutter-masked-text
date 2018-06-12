@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a60a7eb-71eb-4c43-9ad0-36cd17a7dbf2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/flutter_masked_text.iml" afterPath="$PROJECT_DIR$/flutter_masked_text.iml" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_masked_text.dart" afterPath="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
-      <change beforePath="$PROJECT_DIR$/publish.sh" afterPath="$PROJECT_DIR$/publish.sh" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
       <change beforePath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" afterPath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -26,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1843">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="763">
+              <caret line="99" column="7" lean-forward="false" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -71,24 +62,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="666">
-                <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <first_editor relative-caret-position="95">
+                <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                 <folding>
-                  <marker date="1528763097503" expanded="true" signature="373:397" ph="(...)" />
-                  <marker date="1528763097503" expanded="true" signature="1182:1215" ph="(...)" />
-                  <marker date="1528763097503" expanded="true" signature="1394:1421" ph="(...)" />
-                  <marker date="1528763097503" expanded="true" signature="1651:1692" ph="{...}" />
-                  <marker date="1528763097503" expanded="true" signature="1672:1690" ph="(...)" />
-                  <marker date="1528763097503" expanded="true" signature="1736:1774" ph="(...)" />
-                  <marker date="1528763097503" expanded="true" signature="2174:2227" ph="(...)" />
-                  <marker date="1528763097503" expanded="true" signature="2800:2847" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="458:482" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="1267:1300" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="1479:1506" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="1736:1777" ph="{...}" />
+                  <marker date="1528763900271" expanded="true" signature="1757:1775" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="1821:1859" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="2259:2312" ph="(...)" />
+                  <marker date="1528763900271" expanded="true" signature="2885:2932" ph="(...)" />
                 </folding>
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,11 +127,12 @@
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/test/money_masked_text_test.dart" />
         <option value="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
-        <option value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/publish.sh" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
       </list>
     </option>
   </component>
@@ -166,11 +168,6 @@
             <path>
               <item name="flutter-masked-text" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter-masked-text" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter-masked-text" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter-masked-text" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -188,7 +185,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1528763106294" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1528764537714" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -785,24 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/publish.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -836,20 +815,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="666">
-            <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
             <folding>
-              <marker date="1528763097503" expanded="true" signature="373:397" ph="(...)" />
-              <marker date="1528763097503" expanded="true" signature="1182:1215" ph="(...)" />
-              <marker date="1528763097503" expanded="true" signature="1394:1421" ph="(...)" />
-              <marker date="1528763097503" expanded="true" signature="1651:1692" ph="{...}" />
-              <marker date="1528763097503" expanded="true" signature="1672:1690" ph="(...)" />
-              <marker date="1528763097503" expanded="true" signature="1736:1774" ph="(...)" />
-              <marker date="1528763097503" expanded="true" signature="2174:2227" ph="(...)" />
-              <marker date="1528763097503" expanded="true" signature="2800:2847" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="458:482" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="1267:1300" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="1479:1506" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="1736:1777" ph="{...}" />
+              <marker date="1528763900271" expanded="true" signature="1757:1775" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="1821:1859" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="2259:2312" ph="(...)" />
+              <marker date="1528763900271" expanded="true" signature="2885:2932" ph="(...)" />
             </folding>
           </first_editor>
           <second_editor />
@@ -858,6 +845,24 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="99" column="7" lean-forward="false" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
