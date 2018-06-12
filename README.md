@@ -108,8 +108,13 @@ To set value programaticaly, use `updateValue`:
 controller.updateValue(1234.0);
 ```
 
+To get the number value from masked text, use the `numberValue` property:
+```dart
+double val = controller.numberValue;
+```
+
 ## TODO
 - [x] Custom translations
 - [x] Money Mask
 - [ ] Raw Text Widget
-- [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card
+- [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card, etc...
