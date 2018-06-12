@@ -114,7 +114,7 @@ class MoneyMaskedTextController extends TextEditingController {
 
   double get numberValue =>
   	double.parse(
-			this.text.replaceAll(this.thousandSeparator, '').replaceAll(this.decimalSeparator, '')
+			_getSanitizedText(this.text)
 		) / 100.0;
 
 	@override
@@ -127,6 +127,25 @@ class MoneyMaskedTextController extends TextEditingController {
     }
 
     this.selection = new TextSelection.fromPosition(new TextPosition(offset: super.text.length));
+  }
+
+  String _getSanitizedText(String text) {
+	  String cleanedText = text;
+
+	  var valuesToSanitize = [
+	    this.thousandSeparator,
+      this.decimalSeparator
+    ];
+
+	  valuesToSanitize.forEach((val){
+	    cleanedText = cleanedText.replaceAll(val, '');
+    });
+
+    var onlyNumbersRegex = new RegExp(r'[^\d]');
+
+    cleanedText = cleanedText.replaceAll(onlyNumbersRegex, '');
+
+    return cleanedText;
   }
 
   String _applyMask(double value) {

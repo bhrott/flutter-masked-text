@@ -91,5 +91,12 @@ void main() {
 
       expect(controller.text, '1,234.00');
     });
+
+    test('number value for 0,10 must be 0.1', () {
+      var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
+      controller.updateValue(0.1);
+
+      expect(controller.numberValue, 0.1);
+    });
   });
 }
