@@ -1,5 +1,5 @@
 ## [0.5.0] - 2018-jun-17.
-* Adding left and right symbols.
+* Adding left and right symbols (thanks to [tobire](https://github.com/tobire)).
 
 ## [0.4.1] - 2018-jun-11.
 * Fixing not allowed characters on keyboard (thanks to [tobire](https://github.com/tobire)). Related: [issue#3](https://github.com/benhurott/flutter-masked-text/issues/3).
