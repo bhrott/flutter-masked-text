@@ -90,12 +90,16 @@ class MaskedTextController extends TextEditingController {
   }
 }
 
+/**
+ * Mask for monetary values.
+ */
 class MoneyMaskedTextController extends TextEditingController {
   MoneyMaskedTextController(
       {double initialValue = 0.0,
-      this.decimalSeparator = ',',
-      this.thousandSeparator = '.',
-      this.rightSymbol = ''}) {
+        this.decimalSeparator = ',',
+        this.thousandSeparator = '.',
+        this.rightSymbol = '',
+        this.leftSymbol = ''}) {
     _validateConfig();
 
     this.addListener(() {
@@ -108,35 +112,54 @@ class MoneyMaskedTextController extends TextEditingController {
   final String decimalSeparator;
   final String thousandSeparator;
   final String rightSymbol;
+  final String leftSymbol;
 
-  /**
-   * this is the maximun double capacity.
-   */
+  // this is the maximum supported for double values.
   final int _maxLength = 19;
 
   void updateValue(double value) {
     String masked = this._applyMask(value);
 
+    if (masked.length > _maxLength) {
+      masked = masked.substring(0, _maxLength);
+    }
+
+    if (rightSymbol.length > 0) {
+      masked += rightSymbol;
+    }
+
+    if (leftSymbol.length > 0) {
+      masked = leftSymbol + masked;
+    }
+
     if (masked != this.text) {
       this.text = masked;
+
+      var cursorPosition = super.text.length - this.rightSymbol.length;
+      this.selection = new TextSelection.fromPosition(
+          new TextPosition(offset: cursorPosition));
     }
   }
 
   double get numberValue => double.parse(_getSanitizedText(this.text)) / 100.0;
 
-  @override
-  set text(String newText) {
-    if (newText.length <= this._maxLength) {
-      super.text = newText;
-    } else {
-      super.text = newText.substring(0, this._maxLength);
-    }
-
-    var cursorPosition = super.text.length - this.rightSymbol.length;
-
-    this.selection = new TextSelection.fromPosition(
-        new TextPosition(offset: cursorPosition));
-  }
+//  @override
+//  set text(String newText) {
+//    String formattedText = "";
+//
+//    if (newText.length <= _maxLengthForNumbers) {
+//      formattedText = newText;
+//    } else {
+//      formattedText = newText.substring(0, _maxLengthForNumbers);
+//    }
+//
+//    super.text = formattedText + "${this.rightSymbol}";
+//
+//    var cursorPosition = super.text.length - this.rightSymbol.length;
+//
+//    this.selection = new TextSelection.fromPosition(
+//        new TextPosition(offset: cursorPosition));
+//  }
 
   _validateConfig() {
     bool rightSymbolHasNumbers = _getOnlyNumbers(this.rightSymbol).length > 0;
@@ -172,7 +195,7 @@ class MoneyMaskedTextController extends TextEditingController {
 
   String _applyMask(double value) {
     String textRepresentation =
-        value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
+    value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
 
     List<String> numberParts = [];
 
@@ -193,10 +216,6 @@ class MoneyMaskedTextController extends TextEditingController {
     }
 
     String numberText = numberParts.join('');
-
-    if (this.rightSymbol.length > 0) {
-      numberText += "${this.rightSymbol}";
-    }
 
     return numberText;
   }

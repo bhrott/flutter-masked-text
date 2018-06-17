@@ -111,13 +111,26 @@ void main() {
       expect(controller.text, '99,99 US\$');
     });
 
-    // todo: this test is failing due some uncaught reason
-//    test('rightSymbol with number must raises an error.', () {
-//      expect(
-//          new MoneyMaskedTextController(rightSymbol: ' U4'),
-//          throwsArgumentError
-//      );
-//    });
+    test('rightSymbol with number must raises an error.', () {
+      Function executor = () {
+        new MoneyMaskedTextController(rightSymbol: ' U4');
+      };
 
+      expect(executor, throwsArgumentError);
+    });
+
+    test('rightSymbol " US\$" with 12345678901234 must results in 123.456.789.012,34 US\$', () {
+      var controller = new MoneyMaskedTextController(rightSymbol: ' US\$');
+      controller.updateValue(123456789012.34);
+
+      expect(controller.text, '123.456.789.012,34 US\$');
+    });
+
+    test('leftSymbol "R\$ " and value 123.45 results in "R\$ 123,45"', () {
+      var controller = new MoneyMaskedTextController(leftSymbol: 'R\$ ');
+      controller.updateValue(123.45);
+
+      expect(controller.text, 'R\$ 123,45');
+    });
   });
 }

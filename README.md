@@ -16,6 +16,8 @@ Import the library
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 ```
 
+## MaskedText
+
 Create your mask controller:
 ```dart
 var controller = new MaskedTextController(mask: '000.000.000-00');
@@ -44,7 +46,7 @@ This is the result:
 
 ![sample](doc/mask.mov.gif)
 
-## Mask Options
+#### Mask Options
 
 In mask, you can use the following characters:
 * `0`: accept numbers
@@ -52,13 +54,13 @@ In mask, you can use the following characters:
 * `@`: accept numbers and letters
 * `*`: accept any character
 
-## Initial Value
+#### Initial Value
 To start a mask with initial value, just use `text` property on constructor:
 ```dart
 var controller = new MaskedTextController(mask: '000-000', text: '123456');
 ```
 
-## Update text programaticaly
+#### Update text programaticaly
 If you want to set new text after controller initiatialization, use the `updateText` method:
 ```dart
 var controller = new MaskedTextController(text: '', mask: '000-000');
@@ -67,7 +69,7 @@ controller.updateText('123456');
 print(controller.text); //123-456
 ```
 
-## Using custom translators
+#### Using custom translators
 If you want to use your custom regex to allow values, you can pass a custom translation dictionary:
 ```dart
 const translator = {
@@ -88,9 +90,6 @@ controller.updateText('12345678');
 print(controller.text); //1234 **** **** 5678
 ```
 
-## Using default TextEditingController
-The MaskedTextController extends TextEditingController. You can use all default native methods from this class.
-
 ## Money Mask
 To use money mask, create a MoneyMaskedTextController:
 ```dart
@@ -100,20 +99,56 @@ var controller = new MoneyMaskedTextController();
 new TextField(controller: controller, keyboardType: TextInputType.number)
 ```
 
+#### Decimal and Thousand separator
+
 It's possible to customize `decimal` and `thousand` separators:
 ```dart
 var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
 ```
+
+#### Set value programaticaly
 
 To set value programaticaly, use `updateValue`:
 ```dart
 controller.updateValue(1234.0);
 ```
 
+
+#### Get double value
+
 To get the number value from masked text, use the `numberValue` property:
 ```dart
 double val = controller.numberValue;
 ```
+
+
+#### Using decoration symbols
+
+You can use currency symbols if you want:
+```dart
+// left symbol
+var controller = new MoneyMaskedTextController(leftSymbol: 'R\$ ');
+controller.updateValue(123.45);
+
+print(controller.text); //<-- R$ 123,45
+
+
+// right symbol
+var controller = new MoneyMaskedTextController(rightSymbol: ' US\$');
+controller.updateValue(99.99);
+
+print(controller.text); //<-- 99,99 US$
+
+
+// both
+var controller = new MoneyMaskedTextController(leftSymbol: 'to pay:', rightSymbol: ' US\$');
+controller.updateValue(123.45);
+
+print(controller.text); //<-- to pay: 123,45 US$
+```
+
+## Using default TextEditingController
+The MaskedTextController and MoneyMaskedTextController extends TextEditingController. You can use all default native methods from this class.
 
 ## TODO
 - [x] Custom translations

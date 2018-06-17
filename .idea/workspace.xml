@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a60a7eb-71eb-4c43-9ad0-36cd17a7dbf2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_masked_text.dart" afterPath="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
       <change beforePath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" afterPath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -19,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="113" column="58" lean-forward="false" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
+            <state relative-caret-position="146">
+              <caret line="110" column="44" lean-forward="true" selection-start-line="107" selection-start-column="6" selection-end-line="110" selection-end-column="44" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -34,11 +37,9 @@
       <file leaf-file-name="flutter_masked_text.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-              <folding>
-                <element signature="e#148#2086#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="640">
+              <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,8 +48,8 @@
         <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="133">
-                <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <first_editor relative-caret-position="19">
+                <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -66,21 +67,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="95">
-                <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <first_editor relative-caret-position="486">
+                <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
                 <folding>
-                  <marker date="1528763900271" expanded="true" signature="458:482" ph="(...)" />
-                  <marker date="1528763900271" expanded="true" signature="1267:1300" ph="(...)" />
-                  <marker date="1528763900271" expanded="true" signature="1479:1506" ph="(...)" />
-                  <marker date="1528763900271" expanded="true" signature="1736:1777" ph="{...}" />
-                  <marker date="1528763900271" expanded="true" signature="1757:1775" ph="(...)" />
-                  <marker date="1528763900271" expanded="true" signature="1821:1859" ph="(...)" />
-                  <marker date="1528763900271" expanded="true" signature="2259:2312" ph="(...)" />
-                  <marker date="1528763900271" expanded="true" signature="2885:2932" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="473:497" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="1286:1319" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="1500:1527" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="1759:1800" ph="{...}" />
+                  <marker date="1529255590334" expanded="true" signature="1780:1798" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="1844:1882" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="2282:2335" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="2793:2840" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="3262:3282" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="3341:3374" ph="//..." />
+                  <marker date="1529255590334" expanded="true" signature="3421:3443" ph="(...)" />
+                  <marker date="1529255590334" expanded="true" signature="3501:3526" ph="//..." />
+                  <marker date="1529255590334" expanded="true" signature="3573:3618" ph="(...)" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -135,21 +141,20 @@
       <list>
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/test/money_masked_text_test.dart" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/publish.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
         <option value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="-157" />
-    <option name="width" value="2062" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -168,7 +173,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -192,6 +196,7 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +204,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1528769231047" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1529255590363" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -213,7 +218,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flutter Test.test with raising error must succeed">
+  <component name="RunManager" selected="Flutter Test.tests in flutter_masked_text_test.dart">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -345,16 +350,12 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="money mask" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="money mask" />
+    <configuration name="rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </configuration>
-    <configuration name="number value for 0,10 must be 0.1" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="number value for 0,10 must be 0.1" />
-      <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
-    </configuration>
-    <configuration name="rightSymbol with number must raises an error." type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="rightSymbol with number must raises an error." />
+    <configuration name="rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </configuration>
     <configuration name="test with raising error must succeed" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
@@ -363,6 +364,9 @@
     </configuration>
     <configuration name="tests in flutter_masked_text_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+    </configuration>
+    <configuration name="tests in test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testDir" value="$PROJECT_DIR$/test" />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -513,19 +517,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
-      <item index="1" class="java.lang.String" itemvalue="Flutter Test.money mask" />
-      <item index="2" class="java.lang.String" itemvalue="Flutter Test.number value for 0,10 must be 0.1" />
-      <item index="3" class="java.lang.String" itemvalue="Flutter Test.rightSymbol with number must raises an error." />
-      <item index="4" class="java.lang.String" itemvalue="Flutter Test.test with raising error must succeed" />
+      <item index="0" class="java.lang.String" itemvalue="Flutter Test.test with raising error must succeed" />
+      <item index="1" class="java.lang.String" itemvalue="Flutter Test.tests in test" />
+      <item index="2" class="java.lang.String" itemvalue="Flutter Test.rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+      <item index="3" class="java.lang.String" itemvalue="Flutter Test.rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+      <item index="4" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Flutter Test.test with raising error must succeed" />
-        <item index="1" class="java.lang.String" itemvalue="Flutter Test.rightSymbol with number must raises an error." />
-        <item index="2" class="java.lang.String" itemvalue="Flutter Test.number value for 0,10 must be 0.1" />
-        <item index="3" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
-        <item index="4" class="java.lang.String" itemvalue="Flutter Test.money mask" />
+        <item index="0" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
+        <item index="1" class="java.lang.String" itemvalue="Flutter Test.tests in test" />
+        <item index="2" class="java.lang.String" itemvalue="Flutter Test.rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+        <item index="3" class="java.lang.String" itemvalue="Flutter Test.rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+        <item index="4" class="java.lang.String" itemvalue="Flutter Test.test with raising error must succeed" />
       </list>
     </recent_temporary>
   </component>
@@ -546,20 +550,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="number_value_for_0,10_must_be_0_1 - 2018.06.11 at 22h 27m 58s.xml">
-      <configuration name="number value for 0,10 must be 0.1" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 45m 49s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 47m 24s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 48m 13s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 49m 17s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
+    <history-entry file="rightSymbol___US_$__with_12345678901234_must_results_in_123_456_789_012,34_US_$ - 2018.06.17 at 13h 56m 54s.xml">
+      <configuration name="rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 50m 18s.xml">
       <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
@@ -570,15 +562,27 @@
     <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 53m 28s.xml">
       <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
     </history-entry>
+    <history-entry file="rightSymbom___US_$__with_12345678901234_must_results_in_123_456_789_012,34_US_$ - 2018.06.17 at 13h 56m 45s.xml">
+      <configuration name="rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" configurationId="FlutterTestConfigType" />
+    </history-entry>
     <history-entry file="test_with_raising_error_must_succeed - 2018.06.11 at 23h 03m 25s.xml">
       <configuration name="test with raising error must succeed" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.06.11 at 20h 57m 33s.xml">
       <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
+    <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.06.17 at 14h 01m 08s.xml">
+      <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_test - 2018.06.17 at 13h 53m 37s.xml">
+      <configuration name="tests in test" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_test - 2018.06.17 at 13h 57m 10s.xml">
+      <configuration name="tests in test" configurationId="FlutterTestConfigType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-157" width="2062" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -587,13 +591,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32744282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16237624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16237482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3191268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -619,6 +623,84 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding>
+              <marker date="1529255590334" expanded="true" signature="473:497" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1286:1319" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1500:1527" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1759:1800" ph="{...}" />
+              <marker date="1529255590334" expanded="true" signature="1780:1798" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1844:1882" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="2282:2335" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="2793:2840" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3262:3282" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3341:3374" ph="//..." />
+              <marker date="1529255590334" expanded="true" signature="3421:3443" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3501:3526" ph="//..." />
+              <marker date="1529255590334" expanded="true" signature="3573:3618" ph="(...)" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
@@ -654,14 +736,19 @@
           <first_editor relative-caret-position="95">
             <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
             <folding>
-              <marker date="1528763900271" expanded="true" signature="458:482" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1267:1300" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1479:1506" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1736:1777" ph="{...}" />
-              <marker date="1528763900271" expanded="true" signature="1757:1775" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1821:1859" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="2259:2312" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="2885:2932" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="473:497" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1286:1319" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1500:1527" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1759:1800" ph="{...}" />
+              <marker date="1529255590334" expanded="true" signature="1780:1798" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1844:1882" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="2282:2335" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="2793:2840" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3262:3282" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3341:3374" ph="//..." />
+              <marker date="1529255590334" expanded="true" signature="3421:3443" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3501:3526" ph="//..." />
+              <marker date="1529255590334" expanded="true" signature="3573:3618" ph="(...)" />
             </folding>
           </first_editor>
           <second_editor />
@@ -688,9 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding>
-            <element signature="e#148#2086#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -708,9 +793,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2603">
           <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <element signature="e#148#2086#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -755,9 +838,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2603">
           <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <element signature="e#148#2086#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -799,9 +880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding>
-            <element signature="e#148#2086#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -842,9 +921,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#148#2086#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -879,10 +956,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="342">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="110" column="44" lean-forward="true" selection-start-line="107" selection-start-column="6" selection-end-line="110" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="222" column="0" lean-forward="true" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -890,8 +993,8 @@
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="133">
-            <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
             <folding />
           </first_editor>
           <second_editor />
@@ -904,10 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="38">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -915,17 +1018,22 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <first_editor relative-caret-position="486">
+            <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
             <folding>
-              <marker date="1528763900271" expanded="true" signature="458:482" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1267:1300" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1479:1506" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1736:1777" ph="{...}" />
-              <marker date="1528763900271" expanded="true" signature="1757:1775" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="1821:1859" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="2259:2312" ph="(...)" />
-              <marker date="1528763900271" expanded="true" signature="2885:2932" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="473:497" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1286:1319" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1500:1527" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1759:1800" ph="{...}" />
+              <marker date="1529255590334" expanded="true" signature="1780:1798" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="1844:1882" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="2282:2335" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="2793:2840" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3262:3282" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3341:3374" ph="//..." />
+              <marker date="1529255590334" expanded="true" signature="3421:3443" ph="(...)" />
+              <marker date="1529255590334" expanded="true" signature="3501:3526" ph="//..." />
+              <marker date="1529255590334" expanded="true" signature="3573:3618" ph="(...)" />
             </folding>
           </first_editor>
           <second_editor />
@@ -934,34 +1042,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/publish.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="e#148#2086#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="113" column="58" lean-forward="false" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
