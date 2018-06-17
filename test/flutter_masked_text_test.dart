@@ -2,68 +2,71 @@ import 'package:test/test.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 void main() {
-  group('masked text', (){
+  group('masked text', () {
     test('12345678901 with mask 000.000.000-00 resunts 123.456.789-01', () {
-      var cpfController = new MaskedTextController(text: '12345678901', mask: '000.000.000-00');
+      var cpfController =
+          new MaskedTextController(text: '12345678901', mask: '000.000.000-00');
 
       expect(cpfController.text, '123.456.789-01');
     });
 
-    test('abc123 with mask AAA results abc', (){
+    test('abc123 with mask AAA results abc', () {
       var controller = new MaskedTextController(text: 'abc123', mask: 'AAA');
 
       expect(controller.text, 'abc');
     });
 
-    test('update text to 123456 and mask 000-000 results on 123-456', (){
+    test('update text to 123456 and mask 000-000 results on 123-456', () {
       var controller = new MaskedTextController(text: '', mask: '000-000');
       controller.updateText('123456');
 
       expect(controller.text, '123-456');
     });
 
-    test('* must accept all characters', (){
+    test('* must accept all characters', () {
       var controller = new MaskedTextController(text: 'a0&#', mask: '****');
 
       expect(controller.text, 'a0&#');
     });
 
-    test('@ must accept only letters and numbers', (){
+    test('@ must accept only letters and numbers', () {
       var controller = new MaskedTextController(text: 'a0&#', mask: '@@@');
 
       expect(controller.text, 'a0');
     });
 
-    test('remove * translator must keep * in the mask', (){
+    test('remove * translator must keep * in the mask', () {
       var translator = MaskedTextController.getDefaultTranslator();
       translator.remove('*');
 
-      var controller = new MaskedTextController(mask: '0000 **** **** 0000', translator: translator);
+      var controller = new MaskedTextController(
+          mask: '0000 **** **** 0000', translator: translator);
       controller.updateText('12345678');
 
       expect(controller.text, '1234 **** **** 5678');
     });
 
-    test('remove * translator must keep * in the mask', (){
+    test('remove * translator must keep * in the mask', () {
       var translator = MaskedTextController.getDefaultTranslator();
       translator.remove('*');
 
-      var controller = new MaskedTextController(mask: '0000 **** **** 0000', translator: translator);
+      var controller = new MaskedTextController(
+          mask: '0000 **** **** 0000', translator: translator);
       controller.updateText('12345678');
 
       expect(controller.text, '1234 **** **** 5678');
     });
   });
 
-  group('money mask', (){
-    test('0.01 results 0,01', (){
+  group('money mask', () {
+    test('0.01 results 0,01', () {
       var controller = new MoneyMaskedTextController();
       controller.updateValue(0.01);
 
       expect(controller.text, '0,01');
     });
 
-    test('1234.56 results 1.234,56', (){
+    test('1234.56 results 1.234,56', () {
       var controller = new MoneyMaskedTextController();
 
       controller.updateValue(1234.56);
@@ -86,17 +89,48 @@ void main() {
     });
 
     test('custom decimal and thousando separator results in 1,234.00', () {
-      var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
+      var controller = new MoneyMaskedTextController(
+          decimalSeparator: '.', thousandSeparator: ',');
       controller.updateValue(1234.0);
 
       expect(controller.text, '1,234.00');
     });
 
     test('number value for 0,10 must be 0.1', () {
-      var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
+      var controller = new MoneyMaskedTextController(
+          decimalSeparator: '.', thousandSeparator: ',');
       controller.updateValue(0.1);
 
       expect(controller.numberValue, 0.1);
+    });
+
+    test('rightSymbol " US\$" and value 99.99 must resut in 99,99 US\$', () {
+      var controller = new MoneyMaskedTextController(rightSymbol: ' US\$');
+      controller.updateValue(99.99);
+
+      expect(controller.text, '99,99 US\$');
+    });
+
+    test('rightSymbol with number must raises an error.', () {
+      Function executor = () {
+        new MoneyMaskedTextController(rightSymbol: ' U4');
+      };
+
+      expect(executor, throwsArgumentError);
+    });
+
+    test('rightSymbol " US\$" with 12345678901234 must results in 123.456.789.012,34 US\$', () {
+      var controller = new MoneyMaskedTextController(rightSymbol: ' US\$');
+      controller.updateValue(123456789012.34);
+
+      expect(controller.text, '123.456.789.012,34 US\$');
+    });
+
+    test('leftSymbol "R\$ " and value 123.45 results in "R\$ 123,45"', () {
+      var controller = new MoneyMaskedTextController(leftSymbol: 'R\$ ');
+      controller.updateValue(123.45);
+
+      expect(controller.text, 'R\$ 123,45');
     });
   });
 }
