@@ -23,7 +23,8 @@ class MaskedTextController extends TextEditingController {
   }
 
   void updateMask(String mask) {
-    this.text = this._applyMask(mask, this.text);
+    this.mask = mask;
+    this.updateText(this.text);
   }
 
   @override

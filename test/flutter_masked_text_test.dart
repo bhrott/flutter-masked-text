@@ -16,9 +16,9 @@ void main() {
 
       expect(cpfController.text, '123.456.789-01');
 
-      cpfController.updateMask('000.000.000.00');
+      cpfController.updateMask('000.000.0000-0');
 
-      expect(cpfController.text, '123.456.789.01');
+      expect(cpfController.text, '123.456.7890-1');
     });
 
     test('abc123 with mask AAA results abc', () {
