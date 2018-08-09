@@ -1,7 +1,6 @@
 library flutter_masked_text;
 
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class MaskedTextController extends TextEditingController {
   MaskedTextController({String text, this.mask, Map<String, RegExp> translator})
@@ -15,12 +14,16 @@ class MaskedTextController extends TextEditingController {
     this.updateText(this.text);
   }
 
-  final String mask;
+  String mask;
 
   Map<String, RegExp> translator;
 
   void updateText(String text) {
     this.text = this._applyMask(this.mask, text);
+  }
+
+  void updateMask(String mask) {
+    this.text = this._applyMask(mask, this.text);
   }
 
   @override

@@ -3,11 +3,21 @@ import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 void main() {
   group('masked text', () {
-    test('12345678901 with mask 000.000.000-00 resunts 123.456.789-01', () {
+    test('12345678901 with mask 000.000.000-00 results 123.456.789-01', () {
       var cpfController =
           new MaskedTextController(text: '12345678901', mask: '000.000.000-00');
 
       expect(cpfController.text, '123.456.789-01');
+    });
+    test('12345678901 with mask 000.000.000-00 and changed results 123.456.789.01', () {
+      var cpfController =
+          new MaskedTextController(text: '12345678901', mask: '000.000.000-00');
+
+      expect(cpfController.text, '123.456.789-01');
+
+      cpfController.updateMask('000.000.000.00');
+
+      expect(cpfController.text, '123.456.789.01');
     });
 
     test('abc123 with mask AAA results abc', () {
