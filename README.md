@@ -11,7 +11,9 @@ Masked text input for flutter.
 Follow this [GUIDE](https://pub.dartlang.org/packages/flutter_masked_text#-installing-tab-)
 
 ## Usage
+
 Import the library
+
 ```dart
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 ```
@@ -19,11 +21,13 @@ import 'package:flutter_masked_text/flutter_masked_text.dart';
 ## MaskedText
 
 Create your mask controller:
+
 ```dart
 var controller = new MaskedTextController(mask: '000.000.000-00');
 ```
 
 Set controller to your text field:
+
 ```dart
 return new MaterialApp(
     title: 'Flutter Demo',
@@ -49,19 +53,24 @@ This is the result:
 #### Mask Options
 
 In mask, you can use the following characters:
-* `0`: accept numbers
-* `A`: accept letters
-* `@`: accept numbers and letters
-* `*`: accept any character
+
+-   `0`: accept numbers
+-   `A`: accept letters
+-   `@`: accept numbers and letters
+-   `*`: accept any character
 
 #### Initial Value
+
 To start a mask with initial value, just use `text` property on constructor:
+
 ```dart
 var controller = new MaskedTextController(mask: '000-000', text: '123456');
 ```
 
 #### Update text programaticaly
+
 If you want to set new text after controller initiatialization, use the `updateText` method:
+
 ```dart
 var controller = new MaskedTextController(text: '', mask: '000-000');
 controller.updateText('123456');
@@ -70,7 +79,9 @@ print(controller.text); //123-456
 ```
 
 #### Using custom translators
+
 If you want to use your custom regex to allow values, you can pass a custom translation dictionary:
+
 ```dart
 const translator = {
     '#': new RegExp(r'my regex here')
@@ -80,6 +91,7 @@ var controller = new MaskedTextController(mask: '####', translator: translator);
 ```
 
 If you want to use default translator but override some of then, just get base from `getDefaultTranslator` and override what you want (here is a sample for obfuscated credit card):
+
 ```dart
 var translator = MaskedTextController.getDefaultTranslator(); // get new instance of default translator.
 translator.remove('*'); // removing wildcard translator.
@@ -90,8 +102,24 @@ controller.updateText('12345678');
 print(controller.text); //1234 **** **** 5678
 ```
 
+#### Change the mask in runtime
+
+You can use the `updateMask` method to change the mask after the controller was created.
+
+```dart
+var cpfController = new MaskedTextController(text: '12345678901', mask: '000.000.000-00');
+
+print(cpfController.text); //'123.456.789-01'
+
+cpfController.updateMask('000.000.0000-0');
+
+print(cpfController.text); //'123.456.7890-1'
+```
+
 ## Money Mask
+
 To use money mask, create a MoneyMaskedTextController:
+
 ```dart
 var controller = new MoneyMaskedTextController();
 
@@ -102,6 +130,7 @@ new TextField(controller: controller, keyboardType: TextInputType.number)
 #### Decimal and Thousand separator
 
 It's possible to customize `decimal` and `thousand` separators:
+
 ```dart
 var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
 ```
@@ -109,22 +138,23 @@ var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSe
 #### Set value programaticaly
 
 To set value programaticaly, use `updateValue`:
+
 ```dart
 controller.updateValue(1234.0);
 ```
 
-
 #### Get double value
 
 To get the number value from masked text, use the `numberValue` property:
+
 ```dart
 double val = controller.numberValue;
 ```
 
-
 #### Using decoration symbols
 
 You can use currency symbols if you want:
+
 ```dart
 // left symbol
 var controller = new MoneyMaskedTextController(leftSymbol: 'R\$ ');
@@ -148,10 +178,12 @@ print(controller.text); //<-- to pay: 123,45 US$
 ```
 
 ## Using default TextEditingController
+
 The MaskedTextController and MoneyMaskedTextController extends TextEditingController. You can use all default native methods from this class.
 
 ## TODO
-- [x] Custom translations
-- [x] Money Mask
-- [ ] Raw Text Widget
-- [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card, etc...
+
+-   [x] Custom translations
+-   [x] Money Mask
+-   [ ] Raw Text Widget
+-   [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card, etc...
