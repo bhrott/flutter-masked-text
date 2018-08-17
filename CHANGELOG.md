@@ -1,4 +1,4 @@
-## [0.6.0] - 2018-ago-06.
+## [0.6.0] - 2018-ago-16.
 
 -   Now you can change the mask in runtime (thanks to [calebeoliveira](https://github.com/calebeoliveira)).
 -   The sdk support is updated to `>=1.23.0 <3.0.0` (thanks to [tobire](https://github.com/tobire)).
