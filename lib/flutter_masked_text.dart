@@ -145,7 +145,7 @@ class MoneyMaskedTextController extends TextEditingController {
     }
   }
 
-  double get numberValue => double.parse(_getSanitizedText(this.text)) / 100.0;
+  double get numberValue => (double.tryParse(_getSanitizedText(this.text)) ?? 0.0) / 100.0;
 
 //  @override
 //  set text(String newText) {
