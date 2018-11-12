@@ -50,7 +50,7 @@ This is the result:
 
 ![sample](doc/mask.mov.gif)
 
-#### Mask Options
+### Mask Options
 
 In mask, you can use the following characters:
 
@@ -59,7 +59,7 @@ In mask, you can use the following characters:
 -   `@`: accept numbers and letters
 -   `*`: accept any character
 
-#### Initial Value
+### Initial Value
 
 To start a mask with initial value, just use `text` property on constructor:
 
@@ -67,7 +67,7 @@ To start a mask with initial value, just use `text` property on constructor:
 var controller = new MaskedTextController(mask: '000-000', text: '123456');
 ```
 
-#### Update text programaticaly
+### Update text programaticaly
 
 If you want to set new text after controller initiatialization, use the `updateText` method:
 
@@ -78,7 +78,7 @@ controller.updateText('123456');
 print(controller.text); //123-456
 ```
 
-#### Using custom translators
+### Using custom translators
 
 If you want to use your custom regex to allow values, you can pass a custom translation dictionary:
 
@@ -102,7 +102,7 @@ controller.updateText('12345678');
 print(controller.text); //1234 **** **** 5678
 ```
 
-#### Change the mask in runtime
+### Change the mask in runtime
 
 You can use the `updateMask` method to change the mask after the controller was created.
 
@@ -116,6 +116,42 @@ cpfController.updateMask('000.000.0000-0');
 print(cpfController.text); //'123.456.7890-1'
 ```
 
+### Hook: beforeChange [v0.7.0+]
+
+In some cases, you will want to validate the mask value to decide if it's allowed to input or not.
+
+It's simple: you just need to set the `beforeChange` and return `true` or `false`. If you return `true`, it will accept the new value and will try to apply the mask. Otherwhise, it will reject the new value.
+
+The function receives two parameters:
+
+-   `previous`: the previous text of the controller.
+-   `next`: the next text that will be masked.
+
+```dart
+var controller = new MaskedTextController(mask: '(00) 0000-0000');
+controller.beforeChange = (String previous, String next) {
+    // my logic here
+
+    return true;
+};
+```
+
+### Hook: afterChange [v0.7.0+]
+
+This function will be called after setted in the controller.
+
+The function receives two parameters:
+
+-   `previous`: the previous text of the controller.
+-   `next`: the next text that will be masked.
+
+```dart
+var controller = new MaskedTextController(mask: '(00) 0000-0000');
+controller.afterChange = (String previous, String next) {
+    print("$previous | $next");
+};
+```
+
 ## Money Mask
 
 To use money mask, create a MoneyMaskedTextController:
@@ -127,7 +163,7 @@ var controller = new MoneyMaskedTextController();
 new TextField(controller: controller, keyboardType: TextInputType.number)
 ```
 
-#### Decimal and Thousand separator
+### Decimal and Thousand separator
 
 It's possible to customize `decimal` and `thousand` separators:
 
@@ -135,7 +171,7 @@ It's possible to customize `decimal` and `thousand` separators:
 var controller = new MoneyMaskedTextController(decimalSeparator: '.', thousandSeparator: ',');
 ```
 
-#### Set value programaticaly
+### Set value programaticaly
 
 To set value programaticaly, use `updateValue`:
 
@@ -143,7 +179,7 @@ To set value programaticaly, use `updateValue`:
 controller.updateValue(1234.0);
 ```
 
-#### Get double value
+### Get double value
 
 To get the number value from masked text, use the `numberValue` property:
 
@@ -151,7 +187,7 @@ To get the number value from masked text, use the `numberValue` property:
 double val = controller.numberValue;
 ```
 
-#### Using decoration symbols
+### Using decoration symbols
 
 You can use currency symbols if you want:
 
@@ -175,6 +211,23 @@ var controller = new MoneyMaskedTextController(leftSymbol: 'to pay:', rightSymbo
 controller.updateValue(123.45);
 
 print(controller.text); //<-- to pay: 123,45 US$
+```
+
+### hook: afterChange [v0.7.0+]
+
+You can watch for mask and value changes. To do this, just set the `afterChange` hook.
+
+This function receives two parameters:
+
+-   `masked`: the masked text of the controller.
+-   `raw`: the double value of the text.
+
+```dart
+var controller = new MoneyMaskedTextController();
+
+controller.afterChange = (String masked, double raw) {
+    print("$masked | $raw");
+};
 ```
 
 ## Using default TextEditingController

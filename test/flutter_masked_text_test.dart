@@ -10,7 +10,9 @@ void main() {
       expect(cpfController.text, '123.456.789-01');
     });
 
-    test('12345678901 with mask 000.000.000-00 and changed results 123.456.789.01', () {
+    test(
+        '12345678901 with mask 000.000.000-00 and changed results 123.456.789.01',
+        () {
       var cpfController =
           new MaskedTextController(text: '12345678901', mask: '000.000.000-00');
 
@@ -130,7 +132,9 @@ void main() {
       expect(executor, throwsArgumentError);
     });
 
-    test('rightSymbol " US\$" with 12345678901234 must results in 123.456.789.012,34 US\$', () {
+    test(
+        'rightSymbol " US\$" with 12345678901234 must results in 123.456.789.012,34 US\$',
+        () {
       var controller = new MoneyMaskedTextController(rightSymbol: ' US\$');
       controller.updateValue(123456789012.34);
 
