@@ -114,10 +114,10 @@ class MaskedTextController extends TextEditingController {
 class MoneyMaskedTextController extends TextEditingController {
   MoneyMaskedTextController(
       {double initialValue = 0.0,
-      this.decimalSeparator = ',',
-      this.thousandSeparator = '.',
-      this.rightSymbol = '',
-      this.leftSymbol = ''}) {
+        this.decimalSeparator = ',',
+        this.thousandSeparator = '.',
+        this.rightSymbol = '',
+        this.leftSymbol = ''}) {
     _validateConfig();
 
     this.addListener(() {
@@ -198,7 +198,7 @@ class MoneyMaskedTextController extends TextEditingController {
 
   String _applyMask(double value) {
     String textRepresentation =
-        value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
+    value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
 
     List<String> numberParts = [];
 

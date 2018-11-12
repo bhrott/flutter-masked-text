@@ -1,3 +1,7 @@
+## [0.7.0] - 2018-nov-12
+
+-   Adding `beforeChange` and `afterChange` hooks.
+
 ## [0.6.0] - 2018-ago-16.
 
 -   Now you can change the mask in runtime (thanks to [calebeoliveira](https://github.com/calebeoliveira)).
