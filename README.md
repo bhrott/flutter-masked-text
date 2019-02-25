@@ -254,4 +254,3 @@ You can check some code samples in this repo: [flutter-masked-text-samples](http
 -   [x] Custom translations
 -   [x] Money Mask
 -   [ ] Raw Text Widget
--   [ ] Default Pre-Sets like CPF, CNPJ, Date, Credit Card, etc...
