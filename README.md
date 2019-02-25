@@ -230,9 +230,24 @@ controller.afterChange = (String masked, double raw) {
 };
 ```
 
+### Defining decimal places [v0.8.0+]
+
+You can define the number of decimal places using the `precision` prop:
+
+```dart
+var controller = new MoneyMaskedTextController(precision: 3);
+controller.updateValue(123.45);
+
+print(controller.text); //<-- 123,450
+```
+
 ## Using default TextEditingController
 
 The MaskedTextController and MoneyMaskedTextController extends TextEditingController. You can use all default native methods from this class.
+
+## Samples
+
+You can check some code samples in this repo: [flutter-masked-text-samples](https://github.com/benhurott/flutter-masked-text-samples)
 
 ## TODO
 

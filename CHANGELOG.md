@@ -1,3 +1,14 @@
+## [0.8.0] - 2019-fev-24
+
+### Added
+
+- Adding `precision` to `MoneyMaskedTextController`.
+
+### Fixed
+
+- Fixing `initialValue` in `MoneyMaskedTextController`.
+
+
 ## [0.7.0] - 2018-nov-12
 
 -   Adding `beforeChange` and `afterChange` hooks.
