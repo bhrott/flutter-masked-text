@@ -1,4 +1,4 @@
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 
 void main() {
@@ -146,6 +146,13 @@ void main() {
       controller.updateValue(123.45);
 
       expect(controller.text, 'R\$ 123,45');
+    });
+
+    test('precision 3 and value 123.45 results in "123,450"', () {
+      var controller = new MoneyMaskedTextController(precision: 3);
+      controller.updateValue(123.45);
+
+      expect(controller.text, '123,450');
     });
   });
 }

@@ -32,21 +32,36 @@ class MaskedTextController extends TextEditingController {
   String _lastUpdatedText = '';
 
   void updateText(String text) {
-    this.text = this._applyMask(this.mask, text);
+    if(text != null){
+      this.text = this._applyMask(this.mask, text);
+    }
+    else {
+      this.text = '';
+    }
+
     this._lastUpdatedText = this.text;
   }
 
-  void updateMask(String mask) {
+  void updateMask(String mask, {bool moveCursorToEnd = true}) {
     this.mask = mask;
     this.updateText(this.text);
+
+    if (moveCursorToEnd) {
+      this.moveCursorToEnd();
+    }
+  }
+
+  void moveCursorToEnd() {
+    var text = this._lastUpdatedText;
+    this.selection = new TextSelection.fromPosition(
+        new TextPosition(offset: (text ?? '').length));
   }
 
   @override
   void set text(String newText) {
     if (super.text != newText) {
       super.text = newText;
-      this.selection = new TextSelection.fromPosition(
-          new TextPosition(offset: (newText ?? '').length));
+      this.moveCursorToEnd();
     }
   }
 
@@ -114,10 +129,11 @@ class MaskedTextController extends TextEditingController {
 class MoneyMaskedTextController extends TextEditingController {
   MoneyMaskedTextController(
       {double initialValue = 0.0,
-      this.decimalSeparator = ',',
-      this.thousandSeparator = '.',
-      this.rightSymbol = '',
-      this.leftSymbol = ''}) {
+        this.decimalSeparator = ',',
+        this.thousandSeparator = '.',
+        this.rightSymbol = '',
+        this.leftSymbol = '',
+        this.precision = 2}) {
     _validateConfig();
 
     this.addListener(() {
@@ -132,18 +148,23 @@ class MoneyMaskedTextController extends TextEditingController {
   final String thousandSeparator;
   final String rightSymbol;
   final String leftSymbol;
+  final int precision;
 
   Function afterChange = (String maskedValue, double rawValue) {};
 
-  // this is the maximum supported for double values.
-  final int _maxLength = 19;
+  double _lastValue = 0.0;
 
   void updateValue(double value) {
-    String masked = this._applyMask(value);
+    double valueToUse = value;
 
-    if (masked.length > _maxLength) {
-      masked = masked.substring(0, _maxLength);
+    if (value.toStringAsFixed(0).length > 12) {
+      valueToUse = _lastValue;
     }
+    else {
+      _lastValue = value;
+    }
+
+    String masked = this._applyMask(valueToUse);
 
     if (rightSymbol.length > 0) {
       masked += rightSymbol;
@@ -162,7 +183,13 @@ class MoneyMaskedTextController extends TextEditingController {
     }
   }
 
-  double get numberValue => double.parse(_getSanitizedText(this.text)) / 100.0;
+  double get numberValue {
+    List<String> parts = _getOnlyNumbers(this.text).split('').toList(growable: true);
+
+    parts.insert(parts.length - precision, '.');
+
+    return double.parse(parts.join());
+  }
 
   _validateConfig() {
     bool rightSymbolHasNumbers = _getOnlyNumbers(this.rightSymbol).length > 0;
@@ -170,20 +197,6 @@ class MoneyMaskedTextController extends TextEditingController {
     if (rightSymbolHasNumbers) {
       throw new ArgumentError("rightSymbol must not have numbers.");
     }
-  }
-
-  String _getSanitizedText(String text) {
-    String cleanedText = text;
-
-    var valuesToSanitize = [this.thousandSeparator, this.decimalSeparator];
-
-    valuesToSanitize.forEach((val) {
-      cleanedText = cleanedText.replaceAll(val, '');
-    });
-
-    cleanedText = _getOnlyNumbers(cleanedText);
-
-    return cleanedText;
   }
 
   String _getOnlyNumbers(String text) {
@@ -197,29 +210,23 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   String _applyMask(double value) {
-    String textRepresentation =
-        value.toStringAsFixed(2).replaceAll('.', this.decimalSeparator);
+    List<String> textRepresentation = value.toStringAsFixed(precision)
+        .replaceAll('.', '')
+        .split('')
+        .reversed
+        .toList(growable: true);
 
-    List<String> numberParts = [];
+    textRepresentation.insert(precision, decimalSeparator);
 
-    for (var i = 0; i < textRepresentation.length; i++) {
-      numberParts.add(textRepresentation[i]);
-    }
-
-    const lengthsWithThousandSeparators = [6, 10, 14, 18];
-
-    for (var i = 0; i < lengthsWithThousandSeparators.length; i++) {
-      var l = lengthsWithThousandSeparators[i];
-
-      if (numberParts.length > l) {
-        numberParts.insert(numberParts.length - l, this.thousandSeparator);
-      } else {
+    for (var i = precision + 4; true; i = i + 4) {
+      if (textRepresentation.length > i) {
+        textRepresentation.insert(i, thousandSeparator);
+      }
+      else {
         break;
       }
     }
 
-    String numberText = numberParts.join('');
-
-    return numberText;
+    return textRepresentation.reversed.join('');
   }
 }
