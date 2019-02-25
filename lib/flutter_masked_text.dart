@@ -34,8 +34,12 @@ class MaskedTextController extends TextEditingController {
   void updateText(String text) {
     if(text != null){
       this.text = this._applyMask(this.mask, text);
-      this._lastUpdatedText = this.text;
     }
+    else {
+      this.text = '';
+    }
+
+    this._lastUpdatedText = this.text;
   }
 
   void updateMask(String mask, {bool moveCursorToEnd = true}) {

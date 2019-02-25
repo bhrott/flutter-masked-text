@@ -7,7 +7,7 @@
 ### Fixed
 
 - Fixing `initialValue` in `MoneyMaskedTextController`.
-
+- Fixing crash when call `updateText` in `MaskedTextController` with `null` value. (thanks to [Israel Ibarra](https://github.com/ElZombieIsra))
 
 ## [0.7.0] - 2018-nov-12
 
