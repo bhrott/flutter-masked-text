@@ -157,11 +157,11 @@ class MoneyMaskedTextController extends TextEditingController {
 
     String masked = _applyMask(valueToUse);
 
-    if (rightSymbol.length > 0) {
+    if (rightSymbol.isNotEmpty) {
       masked += rightSymbol;
     }
 
-    if (leftSymbol.length > 0) {
+    if (leftSymbol.isNotEmpty) {
       masked = leftSymbol + masked;
     }
 
@@ -182,7 +182,7 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   void _validateConfig() {
-    final rightSymbolHasNumbers = _getOnlyNumbers(rightSymbol).length > 0;
+    final rightSymbolHasNumbers = _getOnlyNumbers(rightSymbol).isNotEmpty;
 
     if (rightSymbolHasNumbers) {
       throw ArgumentError('rightSymbol must not have numbers.');
