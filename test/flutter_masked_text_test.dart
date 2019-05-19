@@ -154,5 +154,13 @@ void main() {
 
       expect(controller.text, '123,450');
     });
+
+    test('uses field\'s default placeholder when initialValue is set to null',
+        () {
+      expect(
+        new MoneyMaskedTextController(initialValue: null).text,
+        '',
+      );
+    });
   });
 }
