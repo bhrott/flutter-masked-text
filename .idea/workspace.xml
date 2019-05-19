@@ -2,76 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a60a7eb-71eb-4c43-9ad0-36cd17a7dbf2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/.metadata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/build.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/java/com/example/maskedtextsample/MainActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/drawable/launch_background.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/app/src/main/res/values/styles.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/build.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/gradle.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/android/settings.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Flutter/AppFrameworkInfo.plist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Flutter/Debug.xcconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Flutter/Release.xcconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner.xcodeproj/project.pbxproj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/AppDelegate.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/AppDelegate.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Base.lproj/Main.storyboard" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/Info.plist" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/ios/Runner/main.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/lib/flutter_masked_text.dart" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/lib/main.dart" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/example/masked_text_sample/pubspec.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/flutter_masked_text.iml" afterPath="$PROJECT_DIR$/flutter_masked_text.iml" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_masked_text.dart" afterPath="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
       <change beforePath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" afterPath="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </list>
@@ -88,14 +21,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flutter_masked_text_test.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2090">
-              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-              <folding>
-                <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-              </folding>
+            <state relative-caret-position="506">
+              <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,18 +34,48 @@
       <file leaf-file-name="flutter_masked_text.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+            <state relative-caret-position="475">
+              <caret line="199" column="21" lean-forward="false" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="text_editing.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/services/text_editing.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="121" column="80" lean-forward="false" selection-start-line="121" selection-start-column="80" selection-end-line="121" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_input.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/services/text_input.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="490" column="32" lean-forward="false" selection-start-line="490" selection-start-column="32" selection-end-line="490" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editable_text.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/widgets/editable_text.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="65" column="6" lean-forward="false" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="76">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -123,9 +84,22 @@
       <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="95">
+                <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -137,7 +111,7 @@
               <first_editor relative-caret-position="2394">
                 <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
                 <folding>
-                  <marker date="1551053373596" expanded="true" signature="5563:6002" ph="h2: #### Using default TextE...oller" />
+                  <marker date="1551054347648" expanded="true" signature="6004:6230" ph="h2: #### TODO" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -184,20 +158,24 @@
         <option value="$PROJECT_DIR$/test/money_masked_text_test.dart" />
         <option value="$PROJECT_DIR$/publish.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
-        <option value="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+        <option value="$PROJECT_DIR$/lib/flutter_masked_text.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4000" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
+    <option name="x" value="1440" />
+    <option name="y" value="-310" />
+    <option name="width" value="2560" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -226,15 +204,20 @@
               <item name="flutter-masked-text" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="flutter-masked-text" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-masked-text" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +225,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551053058712" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554163864813" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -388,6 +371,10 @@
       <module name="" />
       <envs />
     </configuration>
+    <configuration name="empty value should return 0" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="empty value should return 0" />
+      <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
+    </configuration>
     <configuration name="rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testName" value="rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
@@ -396,15 +383,23 @@
       <option name="testName" value="rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </configuration>
-    <configuration name="test with raising error must succeed" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="test with raising error must succeed" />
-      <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
-    </configuration>
     <configuration name="tests in flutter_masked_text_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_masked_text_test.dart" />
     </configuration>
     <configuration name="tests in test" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
       <option name="testDir" value="$PROJECT_DIR$/test" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="flutter_masked_text" />
+      <envs />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -526,19 +521,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="flutter_masked_text" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -555,19 +537,19 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Flutter Test.test with raising error must succeed" />
-      <item index="1" class="java.lang.String" itemvalue="Flutter Test.tests in test" />
-      <item index="2" class="java.lang.String" itemvalue="Flutter Test.rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
-      <item index="3" class="java.lang.String" itemvalue="Flutter Test.rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
-      <item index="4" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
+      <item index="0" class="java.lang.String" itemvalue="Flutter Test.tests in test" />
+      <item index="1" class="java.lang.String" itemvalue="Flutter Test.rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+      <item index="2" class="java.lang.String" itemvalue="Flutter Test.rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+      <item index="3" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
+      <item index="4" class="java.lang.String" itemvalue="Flutter Test.empty value should return 0" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Flutter Test.tests in flutter_masked_text_test.dart" />
-        <item index="1" class="java.lang.String" itemvalue="Flutter Test.tests in test" />
-        <item index="2" class="java.lang.String" itemvalue="Flutter Test.rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
-        <item index="3" class="java.lang.String" itemvalue="Flutter Test.rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
-        <item index="4" class="java.lang.String" itemvalue="Flutter Test.test with raising error must succeed" />
+        <item index="1" class="java.lang.String" itemvalue="Flutter Test.empty value should return 0" />
+        <item index="2" class="java.lang.String" itemvalue="Flutter Test.tests in test" />
+        <item index="3" class="java.lang.String" itemvalue="Flutter Test.rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
+        <item index="4" class="java.lang.String" itemvalue="Flutter Test.rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" />
       </list>
     </recent_temporary>
   </component>
@@ -588,28 +570,28 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="rightSymbol___US_$__with_12345678901234_must_results_in_123_456_789_012,34_US_$ - 2018.06.17 at 13h 56m 54s.xml">
-      <configuration name="rightSymbol &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" configurationId="FlutterTestConfigType" />
+    <history-entry file="empty_value_should_return_0 - 2019.04.01 at 21h 05m 06s.xml">
+      <configuration name="empty value should return 0" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 50m 18s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
+    <history-entry file="empty_value_should_return_0 - 2019.04.01 at 21h 05m 24s.xml">
+      <configuration name="empty value should return 0" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 52m 45s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
+    <history-entry file="empty_value_should_return_0 - 2019.04.01 at 21h 05m 54s.xml">
+      <configuration name="empty value should return 0" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="rightSymbol_with_number_must_raises_an_error_ - 2018.06.11 at 22h 53m 28s.xml">
-      <configuration name="rightSymbol with number must raises an error." configurationId="FlutterTestConfigType" />
+    <history-entry file="empty_value_should_return_0 - 2019.04.01 at 21h 07m 25s.xml">
+      <configuration name="empty value should return 0" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="rightSymbom___US_$__with_12345678901234_must_results_in_123_456_789_012,34_US_$ - 2018.06.17 at 13h 56m 45s.xml">
-      <configuration name="rightSymbom &quot; US\$&quot; with 12345678901234 must results in 123.456.789.012,34 US\$" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="test_with_raising_error_must_succeed - 2018.06.11 at 23h 03m 25s.xml">
-      <configuration name="test with raising error must succeed" configurationId="FlutterTestConfigType" />
+    <history-entry file="empty_value_should_return_0 - 2019.04.01 at 21h 10m 26s.xml">
+      <configuration name="empty value should return 0" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.06.11 at 20h 57m 33s.xml">
       <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="tests_in_flutter_masked_text_test_dart - 2018.06.17 at 14h 01m 08s.xml">
+      <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="tests_in_flutter_masked_text_test_dart - 2019.04.01 at 21h 10m 44s.xml">
       <configuration name="tests in flutter_masked_text_test.dart" configurationId="FlutterTestConfigType" />
     </history-entry>
     <history-entry file="tests_in_test - 2018.06.17 at 13h 53m 37s.xml">
@@ -620,7 +602,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4000" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="1440" y="-310" width="2560" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -628,13 +611,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32640332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16986156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1302621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3191268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,29 +638,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>this.text</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4199">
-          <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -692,7 +666,7 @@
           <first_editor relative-caret-position="2394">
             <caret line="126" column="41" lean-forward="true" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
             <folding>
-              <marker date="1551053373596" expanded="true" signature="5563:6002" ph="h2: #### Using default TextE...oller" />
+              <marker date="1551054347648" expanded="true" signature="6004:6230" ph="h2: #### TODO" />
             </folding>
           </first_editor>
           <second_editor />
@@ -721,9 +695,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -759,7 +731,7 @@
           <first_editor relative-caret-position="95">
             <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
             <folding>
-              <marker date="1551053373596" expanded="true" signature="5563:6002" ph="h2: #### Using default TextE...oller" />
+              <marker date="1551054347648" expanded="true" signature="6004:6230" ph="h2: #### TODO" />
             </folding>
           </first_editor>
           <second_editor />
@@ -779,9 +751,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +779,7 @@
           <first_editor relative-caret-position="95">
             <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
             <folding>
-              <marker date="1551053373596" expanded="true" signature="5563:6002" ph="h2: #### Using default TextE...oller" />
+              <marker date="1551054347648" expanded="true" signature="6004:6230" ph="h2: #### TODO" />
             </folding>
           </first_editor>
           <second_editor />
@@ -837,9 +807,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1843">
           <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -874,9 +842,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -908,9 +874,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -948,9 +912,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -979,17 +941,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/money_masked_text_test.dart" />
-    <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/widgets/editable_text.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish.sh" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2394">
+            <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
+            <folding>
+              <marker date="1551054347648" expanded="true" signature="6004:6230" ph="h2: #### TODO" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1001,70 +975,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/publish.sh" />
-    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <marker date="1551053230411" expanded="true" signature="7:16" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2394">
-            <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
-            <folding>
-              <marker date="1551053373596" expanded="true" signature="5563:6002" ph="h2: #### Using default TextE...oller" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        <state relative-caret-position="76">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/services/text_editing.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="228">
+          <caret line="121" column="80" lean-forward="false" selection-start-line="121" selection-start-column="80" selection-end-line="121" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/services/text_input.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="490" column="32" lean-forward="false" selection-start-line="490" selection-start-column="32" selection-end-line="490" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/widgets/editable_text.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="65" column="6" lean-forward="false" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_masked_text.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="199" column="21" lean-forward="false" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/flutter_masked_text_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="177" column="0" lean-forward="true" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
           <folding />
         </state>
       </provider>

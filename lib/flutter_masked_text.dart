@@ -189,6 +189,12 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   double get numberValue {
+    var hasNoValue = this.text.isEmpty || (this.text.length <= (rightSymbol.length + leftSymbol.length));
+
+    if (hasNoValue) {
+      return 0.0;
+    }
+
     List<String> parts = _getOnlyNumbers(this.text).split('').toList(growable: true);
 
     parts.insert(parts.length - precision, '.');

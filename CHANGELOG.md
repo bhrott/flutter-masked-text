@@ -1,3 +1,9 @@
+## [0.8.1] - 2019-apr-01
+
+### Fixed
+
+- Fixing invalid number in `MoneyMaskedTextController`. (thanks to [yudaprama](https://github.com/yudaprama))
+
 ## [0.8.0] - 2019-fev-24
 
 ### Added
