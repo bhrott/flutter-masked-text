@@ -155,6 +155,11 @@ class MoneyMaskedTextController extends TextEditingController {
   double _lastValue = 0.0;
 
   void updateValue(double value) {
+    if (value == null) {
+      _lastValue = value;
+      return;
+    }
+
     double valueToUse = value;
 
     if (value.toStringAsFixed(0).length > 12) {

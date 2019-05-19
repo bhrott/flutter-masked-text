@@ -155,23 +155,12 @@ void main() {
       expect(controller.text, '123,450');
     });
 
-    test('empty value should return 0', () {
-      var controller = new MoneyMaskedTextController();
-      var value = controller.numberValue;
-      expect(value, 0.0);
-
-      controller = new MoneyMaskedTextController(leftSymbol: '\$');
-      value = controller.numberValue;
-      expect(value, 0.0);
-
-      controller = new MoneyMaskedTextController(rightSymbol: '\$');
-      value = controller.numberValue;
-      expect(value, 0.0);
-
-      controller = new MoneyMaskedTextController(rightSymbol: '\$', leftSymbol: '\$');
-      value = controller.numberValue;
-      expect(value, 0.0);
-
+    test('uses field\'s default placeholder when initialValue is set to null',
+        () {
+      expect(
+        new MoneyMaskedTextController(initialValue: null).text,
+        '',
+      );
     });
   });
 }
