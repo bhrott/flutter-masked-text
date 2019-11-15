@@ -58,7 +58,7 @@ class MaskedTextController extends TextEditingController {
   }
 
   @override
-  void set text(String newText) {
+  set text(String newText) {
     if (super.text != newText) {
       super.text = newText;
       this.moveCursorToEnd();
@@ -123,9 +123,8 @@ class MaskedTextController extends TextEditingController {
   }
 }
 
-/**
- * Mask for monetary values.
- */
+ /// Mask for monetary values.
+
 class MoneyMaskedTextController extends TextEditingController {
   MoneyMaskedTextController(
       {double initialValue = 0.0,
