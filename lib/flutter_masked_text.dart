@@ -157,14 +157,14 @@ class MoneyMaskedTextController extends TextEditingController {
   void updateValue(double value) {
     double valueToUse = value;
 
-    if (value.toStringAsFixed(0).length > 12) {
+    if (value != null && value.toStringAsFixed(0).length > 12) {
       valueToUse = _lastValue;
     }
     else {
       _lastValue = value;
     }
 
-    String masked = this._applyMask(valueToUse);
+    String masked = valueToUse == null ? '' : this._applyMask(valueToUse);
 
     if (rightSymbol.length > 0) {
       masked += rightSymbol;
@@ -185,6 +185,8 @@ class MoneyMaskedTextController extends TextEditingController {
 
   double get numberValue {
     List<String> parts = _getOnlyNumbers(this.text).split('').toList(growable: true);
+
+    if(parts.isEmpty) return null;
 
     parts.insert(parts.length - precision, '.');
 
