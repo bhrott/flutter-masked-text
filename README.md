@@ -6,6 +6,12 @@ Masked text input for flutter.
 
 ![logo](doc/flutter_logo.png)
 
+## Alert
+
+Hi guys!
+
+Unfortunately, I'm not developing mobile anymore. This repo will not receive updates.
+
 ## Install
 
 Follow this [GUIDE](https://pub.dartlang.org/packages/flutter_masked_text#-installing-tab-)
