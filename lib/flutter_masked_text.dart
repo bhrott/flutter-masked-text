@@ -187,7 +187,7 @@ class MoneyMaskedTextController extends TextEditingController {
     try {
       List<String> parts =
           _getOnlyNumbers(this.text).split('').toList(growable: true);
-      final _index = parts.length - precision, '.';
+      final _index = parts.length - precision;
       if(_index >= 0 && _index < parts.length){
        return double.parse(parts.join());
        parts.insert(parts.length - precision, '.');
@@ -198,7 +198,6 @@ class MoneyMaskedTextController extends TextEditingController {
     } catch (e) {
       return 0.0;
     }
-  }
 
   _validateConfig() {
     bool rightSymbolHasNumbers = _getOnlyNumbers(this.rightSymbol).length > 0;
