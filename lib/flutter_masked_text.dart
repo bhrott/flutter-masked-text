@@ -184,11 +184,20 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   double get numberValue {
-    List<String> parts = _getOnlyNumbers(this.text).split('').toList(growable: true);
+    try {
+      List<String> parts =
+          _getOnlyNumbers(this.text).split('').toList(growable: true);
+      final _index = parts.length - precision, '.';
+      if(_index >= 0 && _index < parts.length){
+       return double.parse(parts.join());
+       parts.insert(parts.length - precision, '.');
+      }else{
+        return 0.0;
+      }
 
-    parts.insert(parts.length - precision, '.');
-
-    return double.parse(parts.join());
+    } catch (e) {
+      return 0.0;
+    }
   }
 
   _validateConfig() {
