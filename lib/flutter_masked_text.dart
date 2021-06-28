@@ -1,4 +1,4 @@
-library flutter_masked_text;
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 
@@ -32,10 +32,9 @@ class MaskedTextController extends TextEditingController {
   String _lastUpdatedText = '';
 
   void updateText(String text) {
-    if(text != null){
+    if (text != null) {
       this.text = this._applyMask(this.mask, text);
-    }
-    else {
+    } else {
       this.text = '';
     }
 
@@ -58,7 +57,7 @@ class MaskedTextController extends TextEditingController {
   }
 
   @override
-  void set text(String newText) {
+  set text(String newText) {
     if (super.text != newText) {
       super.text = newText;
       this.moveCursorToEnd();
@@ -129,16 +128,15 @@ class MaskedTextController extends TextEditingController {
 class MoneyMaskedTextController extends TextEditingController {
   MoneyMaskedTextController(
       {double initialValue = 0.0,
-        this.decimalSeparator = ',',
-        this.thousandSeparator = '.',
-        this.rightSymbol = '',
-        this.leftSymbol = '',
-        this.precision = 2}) {
+      this.decimalSeparator = ',',
+      this.thousandSeparator = '.',
+      this.rightSymbol = '',
+      this.leftSymbol = '',
+      this.precision = 2}) {
     _validateConfig();
 
     this.addListener(() {
       this.updateValue(this.numberValue);
-      this.afterChange(this.text, this.numberValue);
     });
 
     this.updateValue(initialValue);
@@ -151,16 +149,14 @@ class MoneyMaskedTextController extends TextEditingController {
   final int precision;
 
   Function afterChange = (String maskedValue, double rawValue) {};
-
+  TextSelection _lastSection;
   double _lastValue = 0.0;
-
   void updateValue(double value) {
     double valueToUse = value;
 
     if (value.toStringAsFixed(0).length > 12) {
       valueToUse = _lastValue;
-    }
-    else {
+    } else {
       _lastValue = value;
     }
 
@@ -176,14 +172,23 @@ class MoneyMaskedTextController extends TextEditingController {
 
     if (masked != this.text) {
       this.text = masked;
-
+      if (Platform.isAndroid) {
+        var cursorPosition = super.text.length - this.rightSymbol.length;
+        _lastSection = new TextSelection.fromPosition(
+            new TextPosition(offset: cursorPosition));
+        this.selection = _lastSection;
+      }
+    }
+    if (Platform.isIOS) {
       var cursorPosition = super.text.length - this.rightSymbol.length;
-      this.selection = new TextSelection.fromPosition(
+      _lastSection = new TextSelection.fromPosition(
           new TextPosition(offset: cursorPosition));
+      this.selection = _lastSection;
     }
   }
 
-  double get numberValue => (double.tryParse(_getSanitizedText(this.text)) ?? 0.0 )/ 100.0;
+  double get numberValue =>
+      (double.tryParse(_getSanitizedText(this.text)) ?? 0.0) / 100.0;
 
   String _getSanitizedText(String text) {
     String cleanedText = text;
@@ -197,7 +202,6 @@ class MoneyMaskedTextController extends TextEditingController {
 
     return cleanedText;
   }
-
 
   _validateConfig() {
     bool rightSymbolHasNumbers = _getOnlyNumbers(this.rightSymbol).length > 0;
@@ -218,7 +222,8 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   String _applyMask(double value) {
-    List<String> textRepresentation = value.toStringAsFixed(precision)
+    List<String> textRepresentation = value
+        .toStringAsFixed(precision)
         .replaceAll('.', '')
         .split('')
         .reversed
@@ -229,8 +234,7 @@ class MoneyMaskedTextController extends TextEditingController {
     for (var i = precision + 4; true; i = i + 4) {
       if (textRepresentation.length > i) {
         textRepresentation.insert(i, thousandSeparator);
-      }
-      else {
+      } else {
         break;
       }
     }
