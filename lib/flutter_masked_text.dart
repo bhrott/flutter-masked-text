@@ -3,7 +3,8 @@ library flutter_masked_text;
 import 'package:flutter/material.dart';
 
 class MaskedTextController extends TextEditingController {
-  MaskedTextController({String text, this.mask, Map<String, RegExp> translator})
+  MaskedTextController(
+      {String? text, this.mask, Map<String, RegExp>? translator})
       : super(text: text) {
     this.translator = translator ?? MaskedTextController.getDefaultTranslator();
 
@@ -20,9 +21,9 @@ class MaskedTextController extends TextEditingController {
     this.updateText(this.text);
   }
 
-  String mask;
+  String? mask;
 
-  Map<String, RegExp> translator;
+  late Map<String, RegExp> translator;
 
   Function afterChange = (String previous, String next) {};
   Function beforeChange = (String previous, String next) {
@@ -32,10 +33,9 @@ class MaskedTextController extends TextEditingController {
   String _lastUpdatedText = '';
 
   void updateText(String text) {
-    if(text != null){
+    if (text.isNotEmpty) {
       this.text = this._applyMask(this.mask, text);
-    }
-    else {
+    } else {
       this.text = '';
     }
 
@@ -53,12 +53,12 @@ class MaskedTextController extends TextEditingController {
 
   void moveCursorToEnd() {
     var text = this._lastUpdatedText;
-    this.selection = new TextSelection.fromPosition(
-        new TextPosition(offset: (text ?? '').length));
+    this.selection =
+        new TextSelection.fromPosition(new TextPosition(offset: (text).length));
   }
 
   @override
-  void set text(String newText) {
+  set text(String newText) {
     if (super.text != newText) {
       super.text = newText;
       this.moveCursorToEnd();
@@ -74,7 +74,7 @@ class MaskedTextController extends TextEditingController {
     };
   }
 
-  String _applyMask(String mask, String value) {
+  String _applyMask(String? mask, String value) {
     String result = '';
 
     var maskCharIndex = 0;
@@ -82,7 +82,7 @@ class MaskedTextController extends TextEditingController {
 
     while (true) {
       // if mask is ended, break.
-      if (maskCharIndex == mask.length) {
+      if (maskCharIndex == mask!.length) {
         break;
       }
 
@@ -104,7 +104,7 @@ class MaskedTextController extends TextEditingController {
 
       // apply translator if match
       if (this.translator.containsKey(maskChar)) {
-        if (this.translator[maskChar].hasMatch(valueChar)) {
+        if (this.translator[maskChar]!.hasMatch(valueChar)) {
           result += valueChar;
           maskCharIndex += 1;
         }
@@ -123,17 +123,14 @@ class MaskedTextController extends TextEditingController {
   }
 }
 
-/**
- * Mask for monetary values.
- */
 class MoneyMaskedTextController extends TextEditingController {
   MoneyMaskedTextController(
       {double initialValue = 0.0,
-        this.decimalSeparator = ',',
-        this.thousandSeparator = '.',
-        this.rightSymbol = '',
-        this.leftSymbol = '',
-        this.precision = 2}) {
+      this.decimalSeparator = ',',
+      this.thousandSeparator = '.',
+      this.rightSymbol = '',
+      this.leftSymbol = '',
+      this.precision = 2}) {
     _validateConfig();
 
     this.addListener(() {
@@ -159,8 +156,7 @@ class MoneyMaskedTextController extends TextEditingController {
 
     if (value.toStringAsFixed(0).length > 12) {
       valueToUse = _lastValue;
-    }
-    else {
+    } else {
       _lastValue = value;
     }
 
@@ -184,13 +180,15 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   double get numberValue {
-    var hasNoValue = this.text.isEmpty || (this.text.length <= (rightSymbol.length + leftSymbol.length));
+    var hasNoValue = this.text.isEmpty ||
+        (this.text.length <= (rightSymbol.length + leftSymbol.length));
 
     if (hasNoValue) {
       return 0.0;
     }
 
-    List<String> parts = _getOnlyNumbers(this.text).split('').toList(growable: true);
+    List<String> parts =
+        _getOnlyNumbers(this.text).split('').toList(growable: true);
 
     parts.insert(parts.length - precision, '.');
 
@@ -216,7 +214,8 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   String _applyMask(double value) {
-    List<String> textRepresentation = value.toStringAsFixed(precision)
+    List<String> textRepresentation = value
+        .toStringAsFixed(precision)
         .replaceAll('.', '')
         .split('')
         .reversed
@@ -227,8 +226,7 @@ class MoneyMaskedTextController extends TextEditingController {
     for (var i = precision + 4; true; i = i + 4) {
       if (textRepresentation.length > i) {
         textRepresentation.insert(i, thousandSeparator);
-      }
-      else {
+      } else {
         break;
       }
     }
