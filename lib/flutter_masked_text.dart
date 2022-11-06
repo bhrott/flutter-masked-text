@@ -159,8 +159,7 @@ class MoneyMaskedTextController extends TextEditingController {
 
     if (value.toStringAsFixed(0).length > 12) {
       valueToUse = _lastValue;
-    }
-    else {
+    } else {
       _lastValue = value;
     }
 
@@ -188,7 +187,7 @@ class MoneyMaskedTextController extends TextEditingController {
 
     parts.insert(parts.length - precision, '.');
 
-    return double.parse(parts.join());
+    return (parts.join() == '.')? 0.0:double.parse(parts.join());
   }
 
   _validateConfig() {
@@ -210,19 +209,21 @@ class MoneyMaskedTextController extends TextEditingController {
   }
 
   String _applyMask(double value) {
-    List<String> textRepresentation = value.toStringAsFixed(precision)
+    List<String> textRepresentation = value
+        .toStringAsFixed(precision)
         .replaceAll('.', '')
         .split('')
         .reversed
         .toList(growable: true);
 
-    textRepresentation.insert(precision, decimalSeparator);
+    if(precision > 0) {
+      textRepresentation.insert(precision, decimalSeparator);
+    }
 
-    for (var i = precision + 4; true; i = i + 4) {
+    for (var i = precision + 3; true; i = i + 4) {
       if (textRepresentation.length > i) {
         textRepresentation.insert(i, thousandSeparator);
-      }
-      else {
+      } else {
         break;
       }
     }
